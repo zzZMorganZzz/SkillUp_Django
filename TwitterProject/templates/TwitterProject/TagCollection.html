@@ -1,0 +1,13 @@
+<div>
+
+    <h1>
+        <p>Collection Tag</p>
+    </h1>
+
+</div>
+
+{%for tag in collection_tags%}
+    <div>
+        <p><a href="http://127.0.0.1:8000/Tags/{{tag.id}}/">{{tag.Tag_Name}}</a></p>
+    </div>
+{% endfor %}

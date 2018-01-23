@@ -1,0 +1,14 @@
+<div>
+        <h1>
+            <p>User Info</p>
+        </h1>
+        <a href="http://127.0.0.1:8000/collectionUser/">Collection Accounts</a>
+    </div>   
+</div>   
+
+{%for user in account%}
+    <div>
+        <p>NickName: {{user.Account_NickName}}</p>
+        <a href="http://127.0.0.1:8000/Posts/{{ user.id}}">Posts user</a>
+    </div>
+{% endfor %}

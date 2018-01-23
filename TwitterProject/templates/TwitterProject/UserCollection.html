@@ -1,0 +1,13 @@
+<div>
+
+    <h1>
+        <p>Collection Account</p>
+    </h1>
+    
+</div>   
+
+{%for account in collection_account%}
+    <div>
+        <p>NickName: <a href="UserInfo/{{account.id}}/">{{account.Account_NickName}}</a></p>        
+    </div>
+{% endfor %}

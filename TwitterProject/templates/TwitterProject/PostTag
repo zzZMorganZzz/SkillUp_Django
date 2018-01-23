@@ -1,0 +1,8 @@
+{%for post in collection_posts%}
+    <div>
+        <p>Caption: {{post.Post_Title}}</p>
+        <p>Content: {{post.Post_Context}}</p>
+        <p>Owner: {{post.Owner.Account_NickName}}</p>
+        <p></p>
+    </div>
+{% endfor %}
